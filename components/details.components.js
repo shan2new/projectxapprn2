@@ -1,47 +1,48 @@
-import React from 'react';
-import { StyleSheet } from 'react-native';
-import { TopNavigation, TopNavigationAction } from '@ui-kitten/components';
-import { ArrowIosBackIcon, BookmarkIcon, BookmarkOutlineIcon } from '../../components/icons';
-import ContentView from '../../layouts/ecommerce/product-details-4';
+// import React from 'react';
+// import { StyleSheet } from 'react-native';
+// import { TopNavigation, TopNavigationAction } from '@ui-kitten/components';
+// import { ArrowIosBackIcon, BookmarkIcon, BookmarkOutlineIcon } from '../../components/icons';
+// import ContentView from '../../layouts/ecommerce/product-details-4';
 
 const Details = ({ navigation }) => {
 
-  const [bookmarked, setBookmarked] = React.useState(false);
+  // const [bookmarked, setBookmarked] = React.useState(false);
 
-  const onBookmarkActionPress = () => {
-    setBookmarked(!bookmarked);
-  };
+  // const onBookmarkActionPress = () => {
+  //   setBookmarked(!bookmarked);
+  // };
 
-  const renderBackAction = () => (
-    <TopNavigationAction
-      icon={ArrowIosBackIcon}
-      onPress={navigation.goBack}
-    />
-  );
+  // const renderBackAction = () => (
+  //   <TopNavigationAction
+  //     icon={ArrowIosBackIcon}
+  //     onPress={navigation.goBack}
+  //   />
+  // );
 
-  const renderBookmarkAction = () => (
-    <TopNavigationAction
-      icon={bookmarked ? BookmarkIcon : BookmarkOutlineIcon}
-      onPress={onBookmarkActionPress}
-    />
-  );
+  // const renderBookmarkAction = () => (
+  //   <TopNavigationAction
+  //     icon={bookmarked ? BookmarkIcon : BookmarkOutlineIcon}
+  //     onPress={onBookmarkActionPress}
+  //   />
+  // );
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <TopNavigation
-        title='Product Details'
-        leftControl={renderBackAction()}
-        rightControls={[renderBookmarkAction()]}
-      />
-      <ContentView/>
-    </SafeAreaView>
+    <div></div>
+    // <SafeAreaView style={{ flex: 1 }}>
+    //   <TopNavigation
+    //     title='Product Details'
+    //     leftControl={renderBackAction()}
+    //     rightControls={[renderBookmarkAction()]}
+    //   />
+    //   <ContentView/>
+    // </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//   },
+// });
 
-export default Default;
+export default Details;
